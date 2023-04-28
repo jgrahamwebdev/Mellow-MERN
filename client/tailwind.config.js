@@ -38,7 +38,17 @@ module.exports = {
           800: "#64665b",
           900: "#32332e"
       },
-      white: '#ffffff',
+      white: {
+          100: "#ffffff",
+          200: "#ffffff",
+          300: "#ffffff",
+          400: "#ffffff",
+          500: "#ffffff",
+          600: "#ecf0f1",
+          700: "#888888",
+          800: "#555555",
+          900: "#333333"
+      },
       frost:{
           100: "#ffffffe6",
           200: "#ffffffcc",
