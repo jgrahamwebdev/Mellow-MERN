@@ -38,7 +38,18 @@ module.exports = {
           800: "#64665b",
           900: "#32332e"
       },
-      white: '#ffffff'
+      white: '#ffffff',
+      frost:{
+          100: "#ffffffe6",
+          200: "#ffffffcc",
+          300: "#ffffffb3",
+          400: "#ffffff99",
+          500: "#ffffff80",
+          600: "#92929299",
+          700: "#555555b3",
+          800: "#2e2e2ecc",
+          900: "#141414e6"
+      },
     },
   },
   plugins: [],
