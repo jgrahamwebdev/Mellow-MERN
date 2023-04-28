@@ -1,3 +1,4 @@
+import Cards from "../components/Cards"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
@@ -7,6 +8,7 @@ const HomeScreen = () => {
         <div className="w-full h-auto">
             <Navbar />
             <Hero />
+            <Cards />
             <Footer />
         </div>
     )
