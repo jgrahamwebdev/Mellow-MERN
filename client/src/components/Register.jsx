@@ -4,8 +4,8 @@ import { Link } from "react-router-dom"
 const Register = () => {
     return (
         <div>
-            <div className="w-screen h-screen flex items-center justify-center flex-col">
-                <div className="w-1/2 h-auto shadow-md py-8 rounded border-2 border-white-600 mb-10">
+            <div className="w-screen h-full flex items-center justify-center flex-col">
+                <div className="w-[85%] md:w-1/2 h-auto shadow-md py-8 rounded border-2 border-white-600 my-10">
                     <div className="w-full h-auto flex items-center justify-center flex-col mb-10">
                         <img className="w-[4rem] h-auto mb-4" src="/img/logo.png" alt="" />
                         <h1 className="text-[2rem] underline underline-offset-2 decoration-2">Register here:</h1>
@@ -36,7 +36,9 @@ const Register = () => {
                         </div>
                     </div>
                 </div>
+                <div className="w-full flex items-center justify-center mb-8">
                     <h3 className="text-[1.1rem]">Have an account? <Link to={'/loginreg'}><span className="text-primary-500 underline underline-offset-2 decoration-2">Login here</span></Link></h3>
+                </div>
             </div>
         </div>
     )

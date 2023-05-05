@@ -4,7 +4,7 @@ const LoginScreen = () => {
     return (
         <div>
             <div className="w-screen h-screen flex items-center justify-center flex-col">
-                <div className="w-1/2 h-auto shadow-md py-8 rounded border-2 border-white-600 mb-10">
+                <div className="w-[85%] md:w-1/2 h-auto shadow-md py-8 rounded border-2 border-white-600 mb-10">
                     <div className="w-full h-auto flex items-center justify-center flex-col mb-10">
                         <img className="w-[4rem] h-auto mb-4" src="/img/logo.png" alt="" />
                         <h1 className="text-[2rem] underline underline-offset-2 decoration-2">Login or register to begin:</h1>

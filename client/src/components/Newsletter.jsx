@@ -9,7 +9,7 @@ const Newsletter = ({ status, message, onValidated }) => {
       });
 
     return (
-        <div className="w-[80%] h-[18rem] bg-white-600 mb-[4rem] mx-auto flex items-center justify-center flex-col rounded-md">
+        <div className="w-[95%] md:w-[85%] h-[18rem] bg-white-600 mb-[4rem] mx-auto flex items-center justify-center flex-col rounded-md">
             <div className="flex items-center justify-center flex-col mb-3">
                 <img className="h-[4rem] w-auto mb-2" src="./img/logo.png" alt="logo"/>
                 <h3 className="text-[1.8rem] font-bold">Subscribe to our newsletter</h3>
@@ -31,9 +31,9 @@ const Newsletter = ({ status, message, onValidated }) => {
                     />
                 )}
             </div>
-            <div className="flex items-center justify-center w-[70%] h-[3rem]">
+            <div className="flex items-center justify-center w-[85%] md:w-[70%] h-[3rem]">
                 <input
-                    className="w-1/2 h-[2.25rem] rounded mr-2 pl-2"
+                    className="w-3/4 md:w-1/2 h-[2.25rem] rounded mr-2 pl-2"
                     ref={node => (email = node)}
                     type="email"
                     placeholder="Your email"

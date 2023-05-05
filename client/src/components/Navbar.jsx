@@ -6,8 +6,6 @@ import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
   SquaresPlusIcon,
   XMarkIcon,
   UserIcon,
@@ -27,11 +25,11 @@ import {
   MapPinIcon,
   NewspaperIcon
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon} from '@heroicons/react/20/solid'
 
 const buy = [
-  { name: 'Homes For Sale', icon: HomeModernIcon },
-  { name: 'Open Houses',  icon: LockOpenIcon },
+  { name: 'Homes For Sale', icon: HomeModernIcon, href: '/homes' },
+  { name: 'Open Houses',  icon: LockOpenIcon},
   { name: 'New Construction', icon:  WrenchScrewdriverIcon },
   { name: 'Coming Soon', icon: SquaresPlusIcon },
   { name: 'All Homes', icon: ArrowPathIcon },
@@ -44,12 +42,12 @@ const sell = [
 ]
 const rent = [
   { name: 'Rental Buildings', icon: BuildingStorefrontIcon },
-  { name: 'Apartments For Rent',  icon: BuildingOfficeIcon },
+  { name: 'Apartments For Rent',  icon: BuildingOfficeIcon, href: '/apartments' },
   { name: 'Homes For Rent', icon:  HomeIcon },
   { name: 'All Rental Listings', icon: BookOpenIcon },
 ]
 const agent = [
-  { name: 'Real Estate Agents', icon: UserIcon },
+  { name: 'Real Estate Agents', icon: UserIcon, href: '/agents' },
   { name: 'Property Managers',  icon: ClipboardDocumentIcon },
   { name: 'Home Inspectors', icon:  MagnifyingGlassCircleIcon },
   { name: 'Home Builders', icon: WrenchIcon },
@@ -68,8 +66,8 @@ function Navbar() {
         <div className='w-full h-[6rem] bg-white-500'>
         <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex items-center justify-start lg:flex-1">
-            <img className="h-10 w-auto mr-4" src="/img/logo.png" alt="" />
-            <h1 className='text-[2rem] font-bold text-primary-500'>Mellow</h1>
+        <Link to={'/'}><img className="h-10 w-auto mr-4" src="/img/logo.png" alt="" /></Link>
+        <Link to={'/'}><h1 className='text-[2rem] font-bold text-primary-500'>Mellow</h1></Link>
         </div>
         <div className="flex lg:hidden">
           <button
