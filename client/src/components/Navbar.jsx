@@ -35,10 +35,10 @@ const buy = [
   { name: 'All Homes', icon: ArrowPathIcon },
 ]
 const sell = [
+  { name: 'List Home For Sale', icon: NewspaperIcon, href: '/listhome' },
   { name: 'Explore Options', icon: ChartBarSquareIcon },
   { name: 'Get Estimate',  icon: CurrencyDollarIcon },
   { name: 'Home Values', icon: MapPinIcon },
-  { name: 'Sellers Guide', icon: NewspaperIcon },
 ]
 const rent = [
   { name: 'Rental Buildings', icon: BuildingStorefrontIcon },
